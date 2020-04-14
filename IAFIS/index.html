@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="face-api.min.js"></script>
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <title>IAFIS</title>
+</head>
+
+<body>
+  <div id="root">
+
+    <header id="header-root">
+
+    </header>
+
+    <div id="particles-js"></div>
+    <div id="content" class="result-modal logged">
+      <div class="modal-title">
+        <span class="modal-title-active">IAFIS</span>
+      </div>
+      <div class="row">
+        <div class="column result-column">
+          <div id="result">Result: </div>
+          <div id="upload-image">
+
+          </div>
+        </div>
+        <div class="column input-column">
+          <div class="input-file-container">
+            <input class="input-file" id="imageUpload" type="file">
+            <label tabindex="0" for="imageUpload" class="input-file-trigger">
+              <i class="fas fa-user-secret"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="modal-footer-text">The Integrated Automated Face Identification System (IAFIS),
+          is a computerized system maintained by the Federal Bureau of Investigation (FBI) since 1999.
+          It is a national automated face identification and criminal history system.
+          IAFIS provides automated face search capabilities, latent searching capability,
+          electronic image storage, and electronic exchange of face and responses.
+          IAFIS houses the faces and criminal histories of 70 million subjects in the criminal master file,
+          31 million civil faces and faces from 73,000 known and suspected terrorists processed by the U.S.
+          or by international law enforcement agencies.</span>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <script id="user-header" type="text/template">
+    <div class = "logo-wrapper">
+        <div class = "logo">Shayrma Group</div>
+        <div class = "page-name">IAFIS Services</div>
+    </div>
+    <nav>
+        <ul>
+            <li><a class = "nav-link-active" href = "index.html">IAFIS Page</a></li>
+            <li><a class = "nav-link-inactive" href = "#">Leave Requests</a></li>
+        </ul>
+    </nav>
+    <div class = "user-account">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <img src = "<%image%>" id = "user-photo" class = "account-image">
+        <a class = "user-account-link" id = "user-link" href="#"><%fullNameEN%></a>
+        <a class = "logout" id = "log-out" href="#"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+  </script>
+
+
+  <script id="admin-header" type="text/template">
+    <div class = "logo-wrapper">
+        <div class = "logo">Shayrma Group</div>
+        <div class = "page-name">IAFIS Services</div>
+    </div>
+    <nav>
+        <ul>
+            <li><a class = "nav-link-active" href = "index.html">IAFIS Page</a></li>
+            <li><a class = "nav-link-inactive" id = "create-account" href = "#">Create Account</a></li>
+            <li><a class = "nav-link-inactive" id = "open-admin" href = "#">Admin Panel</a></li>
+        </ul>
+    </nav>
+    <div class = "user-account">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <img src = "<%image%>" id = "user-photo" class = "account-image">
+        <a class = "user-account-link" id = "user-link" href="#"><%fullNameEN%></a>
+        <a class = "logout" id = "log-out" href="#"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+  </script>
+
+
+  <template id="template-authorization">
+    <div id="login-wrapper">
+      <img class="wave" src="img/wave.png">
+      <div class="container">
+        <div class="img">
+          <img src="img/bg.svg">
+        </div>
+        <div class="login-content">
+          <form id="login-form">
+            <img src="img/avatar.svg">
+            <h2 class="title">Welcome</h2>
+            <div class="input-div one">
+              <div class="i">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="div">
+                <h5>Email</h5>
+                <input type="email" id="email" class="input" required />
+              </div>
+            </div>
+            <div class="input-div pass">
+              <div class="i">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div class="div">
+                <h5>Password</h5>
+                <input type="password" id="password" class="input" required />
+              </div>
+            </div>
+            <a href="#">Forgot Password?</a>
+            <input type="submit" id="butt" class="btn" value="Login">
+          </form>
+        </div>
+      </div>
+    </div>
+  </template>
+
+
+  <script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
